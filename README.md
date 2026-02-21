@@ -8,4 +8,4 @@ INFORMATIKA C\
 STRUKTUR DATA
 
 ## Link Demo Video
-https://drive.google.com/file/d/1BVPRNLOKbFDD_v0-iQXRdLSGyT0pnA0G/view?usp=sharing
+https://youtu.be/S5TUqxso9-o?si=Q0DjoPT37QayT4Uc
