@@ -1,0 +1,83 @@
+# Membuat Class Node
+Buatkan class Node dalam Python untuk struktur data Doubly Linked List.
+
+Ketentuan:
+- Memiliki atribut data
+- Memiliki atribut next
+- Memiliki atribut prev
+- Gunakan constructor (__init__)
+- Tambahkan komentar sederhana pada setiap atribut
+
+# Membuat Class CircularDoublyLinkedList
+Buatkan class CircularDoublyLinkedList dalam Python.
+
+Ketentuan:
+- Memiliki atribut head
+- Memiliki atribut size
+- Inisialisasi head = None dan size = 0
+- Tambahkan komentar penjelasan pada constructor
+
+# Menambahkan Method Insert (Circular)
+Tambahkan method insert pada class CircularDoublyLinkedList.
+
+Ketentuan:
+- Menambahkan node di akhir
+- Jika list kosong, node menunjuk ke dirinya sendiri (circular)
+- Jika tidak kosong, hubungkan node baru dengan tail dan head
+- Tambahkan size setiap insert
+- Tambahkan komentar penjelasan logika circular
+
+# Menambahkan Method Delete
+Tambahkan method delete berdasarkan nomor urut pada CircularDoublyLinkedList.
+
+Ketentuan:
+- Validasi jika list kosong
+- Validasi jika posisi tidak valid
+- Jika hanya 1 node, head menjadi None
+- Jika lebih dari 1 node, sambungkan prev dan next
+- Jika yang dihapus adalah head, pindahkan head
+- Kurangi size
+- Tambahkan komentar penjelasan
+
+# Menambahkan Traversal Forward
+Tambahkan method display_forward pada CircularDoublyLinkedList.
+
+Ketentuan:
+- Menampilkan data dari head ke tail
+- Gunakan time.sleep(5) untuk efek teks berjalan
+- Gunakan looping sesuai jumlah size agar tidak infinite loop
+- Tambahkan komentar penjelasan
+
+# Menambahkan Traversal Backward
+Tambahkan method display_backward.
+
+Ketentuan:
+- Mulai dari tail (head.prev)
+- Bergerak menggunakan prev
+- Gunakan delay 5 detik
+- Tambahkan komentar penjelasan
+
+# Menambahkan Method display_at
+Tambahkan method display_at untuk menampilkan berita berdasarkan nomor urut.
+
+Ketentuan:
+- Validasi posisi
+- Traversal dari head sampai posisi ditemukan
+- Tampilkan data
+- Tambahkan komentar penjelasan
+
+# Membuat Menu Program
+Buatkan menu interaktif berbasis terminal untuk mengakses semua method:
+
+Menu:
+1. Insert berita
+2. Hapus berita
+3. Tampilkan forward
+4. Tampilkan backward
+5. Tampilkan berita tertentu
+6. Exit
+
+Ketentuan:
+- Gunakan while True
+- Gunakan input dari user
+- Tambahkan validasi input agar tidak error
