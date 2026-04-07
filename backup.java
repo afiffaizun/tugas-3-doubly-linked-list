@@ -85,52 +85,48 @@ class CircularDoublyLinkedList {
 
 
     // Tampilkan forward
-    public void displayForwardLoop() {
+    public void displayForward() {
         if (head == null) {
             System.out.println("Tidak ada berita.\n");
             return;
         }
 
-        System.out.println("\n=== Teks Berjalan (Loop Forward) ===");
-
+        System.out.println("\n=== Teks Berjalan (Forward) ===");
         Node current = head;
 
-        while (true) {
-            System.out.println(current.data);
-
+        for (int i = 1; i <= size; i++) {
+            System.out.println(i + ". " + current.data);
             try {
-                Thread.sleep(2000); // Delay 2 detik (biar tidak lama)
+                Thread.sleep(5000); // Delay 5 detik
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
-            current = current.next; // terus muter
+            current = current.next;
         }
+        System.out.println();
     }
 
 
     // Tampilkan backward
-    public void displayBackwardLoop() {
+    public void displayBackward() {
         if (head == null) {
             System.out.println("Tidak ada berita.\n");
             return;
         }
 
-        System.out.println("\n=== Teks Berjalan (Loop Backward) ===");
-
+        System.out.println("\n=== Teks Berjalan (Backward) ===");
         Node current = head.prev;
 
-        while (true) {
-            System.out.println(current.data);
-
+        for (int i = size; i >= 1; i--) {
+            System.out.println(i + ". " + current.data);
             try {
-                Thread.sleep(2000);
+                Thread.sleep(5000); // Delay 5 detik
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
-            current = current.prev; // muter ke belakang
+            current = current.prev;
         }
+        System.out.println();
     }
 
     // Tampilkan berita tertentu
@@ -158,7 +154,7 @@ class CircularDoublyLinkedList {
 
 
 // Main Class (Menu Program)
-public class tugas_3 {
+public class backup {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         CircularDoublyLinkedList cdll = new CircularDoublyLinkedList();
@@ -190,11 +186,11 @@ public class tugas_3 {
                     break;
 
                 case 3:
-                    cdll.displayForwardLoop();
+                    cdll.displayForward();
                     break;
 
                 case 4:
-                    cdll.displayBackwardLoop();
+                    cdll.displayBackward();
                     break;
 
                 case 5:
